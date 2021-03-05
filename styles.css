@@ -1,0 +1,129 @@
+.win {
+
+  animation:wonanim 0.5s infinite;
+}
+
+@-webkit-keyframes wonanim {
+  0%, 49% {
+    background-color: red;
+  }
+  50%, 100% {
+    background-color: white;
+  }
+}
+
+.currentSong{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+
+}
+
+.progress-bar
+{
+  position: relative;
+  flex-grow: 1;
+  background:lightgrey;
+  margin: 0 20px;
+}
+.progress-bar .progress{
+  background:lightskyblue;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: 1s ease-in-out;
+}
+
+
+#songs {
+  width: 100%;
+  text-align: left;
+  border-collapse: unset;
+  border-spacing: 0;
+}
+
+tr{
+  font-size:18px;
+  border-bottom: 1px solid dimgrey!important;
+  padding:0 15px;
+
+}
+td{
+  border:none!important;
+  padding: 15px 0;
+}
+
+tr:hover{
+  background: lightblue;
+}
+
+#image{
+  width: 100%;
+  padding-right: 40px;
+  display: inline-block;
+  box-sizing: border-box;
+
+  height: auto;
+}
+.img
+{
+  margin-right: 10px;
+}
+#song{
+  font-size: 34px;
+}
+.time {
+  font-size: 20px;
+  display: flex;
+}
+
+.info {
+  font-weight: bold;
+  font-size: 20px;
+}
+pre#selectedJSON {
+  height: 400px;
+}
+.left{
+  max-width: 30%;
+  padding-bottom: 40px;
+  flex-grow: 0;
+}
+
+.right{
+  lex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right > *{
+  margin-top: 20px;
+}
+
+.times
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: space-between;
+}
+
+.after{
+  background: #ffd8d8;
+}
+.advert{
+  background: #fff5a8;
+}
